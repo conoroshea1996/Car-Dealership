@@ -57,6 +57,7 @@ body{
 .header{
     clip-path: polygon(0 0,100% 0,100% 97%,50% 100%,0 97%);
     color: var(--mainWhite);
+    overflow: hidden;
 }
 .height-max{
     min-height: calc(100vh - 76px);
@@ -64,10 +65,17 @@ body{
     background-size: 100% 100%;
     background-position:center;
     background-attachment: fixed;
+    animation: zoom 10s 2;
 }
 @keyframes zoom{
     0%{
-        
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2) translateX(-5%);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 .title-heading{
@@ -91,8 +99,15 @@ body{
         font-size: 3rem;
     }
 }
-
 /*------------------- End Of Header -------------- */
+/*------------------- Section -------------- */
+.section-title-special{
+    background: var(--transparenRed);
+    color:var(--mainWhite);
+    clip-path: polygon(5% 0,100% 0,95% 100%,0 100%);
+}
+/*------------------- End Of Section -------------- */
+
 
 
 
