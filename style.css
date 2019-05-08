@@ -106,7 +106,38 @@ body{
     color:var(--mainWhite);
     clip-path: polygon(5% 0,100% 0,95% 100%,0 100%);
 }
+/* Skills*/
+.skills-icon{
+    font-size:3rem;
+    background: var(--mainGray);
+    color:var(--transparenRed);
+}
+.skills-icon:hover{
+    color: var(--transparenRed);
+}
+.skills-underline{
+    width: 4.5rem;
+    height: 0.3rem;
+    background-color: var(--mainRed);
+    margin: 0.8rem auto;
+}
 /*------------------- End Of Section -------------- */
+/*------------------- Preloader -------------- */
+.preloader{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background: #FCFCFC;
+    z-index: 10;
+}
+.hidePreloader{
+    display: none !important;
+}
+/*------------------- End Of Preloader -------------- */
+
+
 
 
 
