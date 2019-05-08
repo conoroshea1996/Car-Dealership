@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+:root{
+    --mainRed:#F42C04;
+    --transparenRed:rgba(244, 44, 4, 0.5);
+    --mainBlack: #313638;
+    --mainWhite: #FCFCFC;
+    --mainGray:#CDCCD1;
+
+}
+
+body{
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: 'Libre Baskerville', serif;
+}
+.logo{
+    display: block;
+    width: 80px;
+}
+/*------------------- Navbar -------------- */
+.navbar{
+    background: var(--mainWhite);
+    border-bottom: 2px solid var(--mainGray);
+}
+.navbar-icon{
+    font-size: 2rem;
+    color: var(--mainRed);
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.nav-link{
+    color: var(--mainBlack);
+}
+.nav-link:hover{
+    color: var(--mainRed);
+}
+.nav-icons{
+    font-size: 1.4rem;
+}
+.nav-icons a i{
+    color: var(--mainRed);
+    padding: 0 8px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-icons a:hover i{
+    transform: translateY(-4px);
+    color: var(--transparenRed);
+}
+
+
+
+/*------------------- End Of Navbar -------------- */
+
+/*------------------- Header -------------- */
+.header{
+    clip-path: polygon(0 0,100% 0,100% 97%,50% 100%,0 97%);
+    color: var(--mainWhite);
+}
+.height-max{
+    min-height: calc(100vh - 76px);
+    background:linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0, 0, 0, 0.2) 100%), url(./images/banner.jpg);
+    background-size: 100% 100%;
+    background-position:center;
+    background-attachment: fixed;
+}
+@keyframes zoom{
+    0%{
+        
+    }
+}
+.title-heading{
+    background: rgba(255, 255, 255, 0.199);
+    border-left: 10px solid var(--transparenRed);
+}
+.title{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.header a i{
+    color: var(--transparenRed);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+.header a i:hover{
+    opacity: 0.4;
+}
+@media screen and(min-width:768px){
+    .title{
+        font-size: 3rem;
+    }
+}
+
+/*------------------- End Of Header -------------- */
+
+
+
+
