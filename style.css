@@ -65,19 +65,8 @@ body{
     background-size: 100% 100%;
     background-position:center;
     background-attachment: fixed;
-    animation: zoom 10s 2;
 }
-@keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2) translateX(-5%);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
+
 .title-heading{
     background: rgba(255, 255, 255, 0.199);
     border-left: 10px solid var(--transparenRed);
@@ -104,7 +93,8 @@ body{
 .section-title-special{
     background: var(--transparenRed);
     color:var(--mainWhite);
-    clip-path: polygon(5% 0,100% 0,95% 100%,0 100%);
+    clip-path: polygon(5% 0,100% 0,96% 100%,0 100%);
+    letter-spacing: 2px;
 }
 /* Skills*/
 .skills-icon{
@@ -136,6 +126,50 @@ body{
     display: none !important;
 }
 /*------------------- End Of Preloader -------------- */
+/*-------------------  Inventory -------------- */
+.inventory{
+    background:rgba(199, 198, 198, 0.08);
+}
+.car-card{
+    border-radius: 0 !important;
+}
+.car-value{
+    background: rgba(199, 198, 198, 0.2);
+    border-left:0.5rem solid var(--transparenRed);
+    transition: all 0.5s ease-in-out;
+}
+.car-value:hover{
+    background: rgba(199, 198, 198, 0.55);
+}
+/*------------------- End Of Inventory -------------- */
+/*------------------- Question -------------- */
+.question{
+    background:linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0, 0, 0, 0.2) 100%),url(./images/question.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #FCFCFC;
+  
+}
+.question-red{
+    background: var(--transparenRed);
+    border:solid 1px var(--transparenRed);
+}
+.question-blue{
+background: rgba(77, 77, 231, 0.192);
+border:solid 1px var(--transparenRed);
+
+}
+.question-icon{
+    font-size: 4rem;
+    color: #FCFCFC;
+    transition: all 0.5s ease;
+}
+.question-icon:hover {
+    transform: translateY(-4px);
+    color:var(--mainRed);
+}
+/*------------------- End Of Question -------------- */
+
 
 
 
