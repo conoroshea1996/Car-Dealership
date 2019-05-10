@@ -254,6 +254,20 @@ border:solid 1px var(--transparenRed);
 }
 
 /*------------------- End Of Quotes -------------- */
+/*------------------- Footer -------------- */
+.footer{
+    background: var(--mainGray);
+}
+.footer-icon{
+    font-size: 2.4rem;
+    color: var(--transparenRed);
+    transition: all 0.8s ease-in-out;
+}
+.footer-icon:hover{
+    color:var(--mainRed);
+    transform: translateY(-3px);
+}
+/*------------------- End Of Footer -------------- */
 
 
 
