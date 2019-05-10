@@ -178,7 +178,7 @@ border:solid 1px var(--transparenRed);
     border-radius: 0.4rem;
     padding: 5px;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: all 0.5s ease;
 }
 .featured-item:hover{
@@ -225,6 +225,36 @@ border:solid 1px var(--transparenRed);
     opacity: 0.7;
 }
 /*------------------- End Of featured -------------- */
+/*------------------- Quotes -------------- */
+
+.card{
+    position: relative;
+}
+.large{
+    width: 300px;
+}
+.img-customer{
+    position: absolute;
+    max-width: 40%;
+    height: 120px;
+    border-radius: 900px;
+    border: solid var(--mainGray) 2px;
+    top:43%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.card-title{
+     color: var(--mainRed);
+}
+.card-title-muted{
+    color:var(--transparenRed);
+}
+.customer-icon{
+    font-size: 2.4rem;
+}
+
+/*------------------- End Of Quotes -------------- */
+
 
 
 
